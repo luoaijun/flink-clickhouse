@@ -1,8 +1,8 @@
 package com.flink.realtim.app.dws;
 
-import com.atguigu.gmall.realtime.bean.ProvinceStats;
-import com.atguigu.gmall.realtime.utils.ClickHouseUtil;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.bean.ProvinceStats;
+import com.flink.realtim.utils.ClickHouseUtil;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.EnvironmentSettings;

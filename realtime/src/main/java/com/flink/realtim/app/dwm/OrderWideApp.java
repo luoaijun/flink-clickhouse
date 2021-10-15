@@ -2,11 +2,11 @@ package com.flink.realtim.app.dwm;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.gmall.realtime.app.func.DimAsyncFunction;
-import com.atguigu.gmall.realtime.bean.OrderDetail;
-import com.atguigu.gmall.realtime.bean.OrderInfo;
-import com.atguigu.gmall.realtime.bean.OrderWide;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.app.func.DimAsyncFunction;
+import com.flink.realtim.bean.OrderDetail;
+import com.flink.realtim.bean.OrderInfo;
+import com.flink.realtim.bean.OrderWide;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.RichMapFunction;

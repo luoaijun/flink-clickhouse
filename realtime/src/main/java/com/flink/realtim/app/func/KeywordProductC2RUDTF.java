@@ -1,6 +1,6 @@
 package com.flink.realtim.app.func;
 
-import com.atguigu.gmall.realtime.common.GmallConstant;
+import com.flink.realtim.common.GmallConstant;
 import org.apache.flink.table.annotation.DataTypeHint;
 import org.apache.flink.table.annotation.FunctionHint;
 import org.apache.flink.table.functions.TableFunction;

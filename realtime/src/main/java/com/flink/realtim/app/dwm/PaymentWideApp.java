@@ -1,11 +1,11 @@
 package com.flink.realtim.app.dwm;
 
 import com.alibaba.fastjson.JSON;
-import com.atguigu.gmall.realtime.bean.OrderWide;
-import com.atguigu.gmall.realtime.bean.PaymentInfo;
-import com.atguigu.gmall.realtime.bean.PaymentWide;
-import com.atguigu.gmall.realtime.utils.DateTimeUtil;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.bean.OrderWide;
+import com.flink.realtim.bean.PaymentInfo;
+import com.flink.realtim.bean.PaymentWide;
+import com.flink.realtim.utils.DateTimeUtil;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;

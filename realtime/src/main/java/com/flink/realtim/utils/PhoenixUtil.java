@@ -1,7 +1,7 @@
 package com.flink.realtim.utils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.gmall.realtime.common.GmallConfig;
+import com.flink.realtim.common.GmallConfig;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.sql.*;

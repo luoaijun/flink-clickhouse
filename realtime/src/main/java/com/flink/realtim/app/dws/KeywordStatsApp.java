@@ -1,10 +1,10 @@
 package com.flink.realtim.app.dws;
 
-import com.atguigu.gmall.realtime.app.func.KeywordUDTF;
-import com.atguigu.gmall.realtime.bean.KeywordStats;
-import com.atguigu.gmall.realtime.common.GmallConstant;
-import com.atguigu.gmall.realtime.utils.ClickHouseUtil;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.app.func.KeywordUDTF;
+import com.flink.realtim.bean.KeywordStats;
+import com.flink.realtim.common.GmallConstant;
+import com.flink.realtim.utils.ClickHouseUtil;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.EnvironmentSettings;

@@ -3,7 +3,7 @@ package com.flink.realtim.app.dwd;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.api.common.state.ValueState;
@@ -46,7 +46,7 @@ public class BaseLogApp {
         //env.getCheckpointConfig().setCheckpointTimeout(60000);
         //env.setStateBackend(new FsStateBackend("hdfs://hadoop202:8020/gmall/checkpoint/baselogApp"));
 
-        //System.setProperty("HADOOP_USER_NAME","atguigu");
+        //System.setProperty("HADOOP_USER_NAME","louaijun");
 
         //TODO 2.从Kafka中读取数据
         String topic = "ods_base_log";

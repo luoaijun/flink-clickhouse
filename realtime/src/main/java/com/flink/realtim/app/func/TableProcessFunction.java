@@ -1,9 +1,9 @@
 package com.flink.realtim.app.func;
 
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.gmall.realtime.bean.TableProcess;
-import com.atguigu.gmall.realtime.common.GmallConfig;
-import com.atguigu.gmall.realtime.utils.MySQLUtil;
+import com.flink.realtim.bean.TableProcess;
+import com.flink.realtim.common.GmallConfig;
+import com.flink.realtim.utils.MySQLUtil;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
@@ -14,6 +14,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.concurrent.ScheduledExecutorService;
 
 /**
  * Author: Felix
@@ -52,6 +53,7 @@ public class TableProcessFunction extends ProcessFunction<JSONObject, JSONObject
         // 因为配置表的数据可能会发生变化，每隔一段时间就从配置表中查询一次数据，更新到map，并检查建表
         //从现在起过delay毫秒后，每隔period执行一次
         Timer timer = new Timer();
+
         timer.schedule(new TimerTask() {
             @Override
             public void run() {

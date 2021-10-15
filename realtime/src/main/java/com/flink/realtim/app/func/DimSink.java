@@ -92,3 +92,5 @@ public class DimSink extends RichSinkFunction<JSONObject> {
         return upsertSql + valueSql;
     }
 }
+
+

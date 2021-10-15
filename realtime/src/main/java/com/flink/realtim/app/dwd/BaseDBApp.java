@@ -2,10 +2,10 @@ package com.flink.realtim.app.dwd;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.gmall.realtime.app.func.DimSink;
-import com.atguigu.gmall.realtime.app.func.TableProcessFunction;
-import com.atguigu.gmall.realtime.bean.TableProcess;
-import com.atguigu.gmall.realtime.utils.MyKafkaUtil;
+import com.flink.realtim.app.func.DimSink;
+import com.flink.realtim.app.func.TableProcessFunction;
+import com.flink.realtim.bean.TableProcess;
+import com.flink.realtim.utils.MyKafkaUtil;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;

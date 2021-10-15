@@ -1,6 +1,6 @@
 package com.flink.realtim.utils;
 
-import com.atguigu.gmall.realtime.bean.TableProcess;
+import com.flink.realtim.bean.TableProcess;
 import com.google.common.base.CaseFormat;
 import org.apache.commons.beanutils.BeanUtils;
 
@@ -39,7 +39,7 @@ public class MySQLUtil {
             Class.forName("com.mysql.jdbc.Driver");
             //创建连接
             conn = DriverManager.getConnection(
-                "jdbc:mysql://hadoop202:3306/gmall0820_realtime?characterEncoding=utf-8&useSSL=false",
+                "jdbc:mysql://172.24.240.137:3306/gmall0820_realtime?characterEncoding=utf-8&useSSL=false",
                 "root",
                 "123456");
             //创建数据库操作对象
