@@ -45,7 +45,7 @@ public class KafkaTest {
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord<String, String> record : records) {
-                System.out.println("key:" + record.key() + "" + ",value:" + record.value());
+                System.out.println("key:"    + record.key() + "" + ",value:" + record.value());
             }
         }
     }
